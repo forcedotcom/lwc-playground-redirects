@@ -12,5 +12,5 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install
-      - run: npm format-test
-      - run: npm test
+      - run: npm run format-test
+      - run: npm run test
