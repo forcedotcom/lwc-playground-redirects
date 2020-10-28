@@ -13,4 +13,4 @@ In order to request a new URL redirect submit a pull request to this repository 
 }
 ```
 
-When you send a pull request, it will be tested to ensure the format is valid and that the code is formatted with Prettier. In order to validate the pull request yourself run `npm run test`.
+When you send a pull request, it will be tested to ensure the format is valid and that the code is formatted with Prettier. In order to validate the pull request yourself run `npm run test` and `npm run format-test`.

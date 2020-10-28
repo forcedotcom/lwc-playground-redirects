@@ -5,9 +5,8 @@
   "main": "redirects.json",
   "scripts": {
     "format": "prettier --write \"**/*.{md,json}\"",
-    "test-format": "prettier --check \"**/*.{md,json}\"",
-    "test-code": "jest",
-    "test": "npm run test-format && npm run test-code"
+    "format-test": "prettier --check \"**/*.{md,json}\"",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
