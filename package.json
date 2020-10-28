@@ -1,0 +1,39 @@
+{
+  "name": "lwc-playground-redirect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redirects.json",
+  "scripts": {
+    "format": "prettier --write \"**/*.{md,json}\"",
+    "test-format": "prettier --check \"**/*.{md,json}\"",
+    "test-code": "jest",
+    "test": "npm run test-format && npm run test-code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forcedotcom/lwc-playground-redirect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forcedotcom/lwc-playground-redirect/issues"
+  },
+  "homepage": "https://github.com/forcedotcom/lwc-playground-redirect#readme",
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "jest": "^26.6.1",
+    "lint-staged": "^10.5.0",
+    "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}
